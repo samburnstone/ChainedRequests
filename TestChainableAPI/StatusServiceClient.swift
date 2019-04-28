@@ -6,4 +6,16 @@
 //  Copyright © 2019 Sam Burnstone. All rights reserved.
 //
 
-import Foundation
+import Siesta
+
+class StatusServiceClient: Service {
+
+    let endpoint: String = "status"
+
+    func fetchUserRegistrationStatus() {
+        resource(endpoint).loadIfNeeded()?
+            .onSuccess { entity in
+            print(entity)
+        }
+    }
+}

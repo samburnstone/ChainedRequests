@@ -15,6 +15,7 @@
 		F6139176227628E400B7945B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6139175227628E400B7945B /* Assets.xcassets */; };
 		F6139179227628E400B7945B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6139177227628E400B7945B /* LaunchScreen.storyboard */; };
 		F6139184227628E400B7945B /* TestChainableAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6139183227628E400B7945B /* TestChainableAPITests.swift */; };
+		F6A61E8F2276307500C152A7 /* StatusServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A61E8E2276307500C152A7 /* StatusServiceClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		F613917F227628E400B7945B /* TestChainableAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestChainableAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6139183227628E400B7945B /* TestChainableAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestChainableAPITests.swift; sourceTree = "<group>"; };
 		F6139185227628E400B7945B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6A61E8E2276307500C152A7 /* StatusServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusServiceClient.swift; sourceTree = "<group>"; };
 		F8BCFF20BF61FB3C35E65565 /* Pods-TestChainableAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestChainableAPI.release.xcconfig"; path = "Target Support Files/Pods-TestChainableAPI/Pods-TestChainableAPI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 			children = (
 				F613916E227628E300B7945B /* AppDelegate.swift */,
 				F6139170227628E300B7945B /* ViewController.swift */,
+				F6A61E8E2276307500C152A7 /* StatusServiceClient.swift */,
 				F6139172227628E300B7945B /* Main.storyboard */,
 				F6139175227628E400B7945B /* Assets.xcassets */,
 				F6139177227628E400B7945B /* LaunchScreen.storyboard */,
@@ -325,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6139171227628E300B7945B /* ViewController.swift in Sources */,
+				F6A61E8F2276307500C152A7 /* StatusServiceClient.swift in Sources */,
 				F613916F227628E300B7945B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
