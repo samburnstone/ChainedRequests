@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06DE02C011E4A4C75B61F72A /* Pods_TestChainableAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E220C2296D3D13EB726DE8F /* Pods_TestChainableAPITests.framework */; };
+		4D24A12AE9774B2CD404DB33 /* Pods_TestChainableAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06E6B6B17FE0FEEFEB8F237 /* Pods_TestChainableAPI.framework */; };
 		F613916F227628E300B7945B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F613916E227628E300B7945B /* AppDelegate.swift */; };
 		F6139171227628E300B7945B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6139170227628E300B7945B /* ViewController.swift */; };
 		F6139174227628E300B7945B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6139172227628E300B7945B /* Main.storyboard */; };
@@ -26,6 +28,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		036DD5544B23BC129234E164 /* Pods-TestChainableAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestChainableAPITests.debug.xcconfig"; path = "Target Support Files/Pods-TestChainableAPITests/Pods-TestChainableAPITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E220C2296D3D13EB726DE8F /* Pods_TestChainableAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestChainableAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C85C20140EE06D4787DF749 /* Pods-TestChainableAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestChainableAPI.debug.xcconfig"; path = "Target Support Files/Pods-TestChainableAPI/Pods-TestChainableAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		CEE441B88DDD31EBB0EC1F74 /* Pods-TestChainableAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestChainableAPITests.release.xcconfig"; path = "Target Support Files/Pods-TestChainableAPITests/Pods-TestChainableAPITests.release.xcconfig"; sourceTree = "<group>"; };
+		D06E6B6B17FE0FEEFEB8F237 /* Pods_TestChainableAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestChainableAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F613916B227628E300B7945B /* TestChainableAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestChainableAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F613916E227628E300B7945B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6139170227628E300B7945B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +43,7 @@
 		F613917F227628E400B7945B /* TestChainableAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestChainableAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6139183227628E400B7945B /* TestChainableAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestChainableAPITests.swift; sourceTree = "<group>"; };
 		F6139185227628E400B7945B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8BCFF20BF61FB3C35E65565 /* Pods-TestChainableAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestChainableAPI.release.xcconfig"; path = "Target Support Files/Pods-TestChainableAPI/Pods-TestChainableAPI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D24A12AE9774B2CD404DB33 /* Pods_TestChainableAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06DE02C011E4A4C75B61F72A /* Pods_TestChainableAPITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9034B408349BBD655D2EA40A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C85C20140EE06D4787DF749 /* Pods-TestChainableAPI.debug.xcconfig */,
+				F8BCFF20BF61FB3C35E65565 /* Pods-TestChainableAPI.release.xcconfig */,
+				036DD5544B23BC129234E164 /* Pods-TestChainableAPITests.debug.xcconfig */,
+				CEE441B88DDD31EBB0EC1F74 /* Pods-TestChainableAPITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9D9C504BC786D1EC53D7663A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D06E6B6B17FE0FEEFEB8F237 /* Pods_TestChainableAPI.framework */,
+				3E220C2296D3D13EB726DE8F /* Pods_TestChainableAPITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F6139162227628E300B7945B = {
 			isa = PBXGroup;
 			children = (
 				F613916D227628E300B7945B /* TestChainableAPI */,
 				F6139182227628E400B7945B /* TestChainableAPITests */,
 				F613916C227628E300B7945B /* Products */,
+				9034B408349BBD655D2EA40A /* Pods */,
+				9D9C504BC786D1EC53D7663A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6139188227628E400B7945B /* Build configuration list for PBXNativeTarget "TestChainableAPI" */;
 			buildPhases = (
+				6C9FFB64312E2585EBDB8E99 /* [CP] Check Pods Manifest.lock */,
 				F6139167227628E300B7945B /* Sources */,
 				F6139168227628E300B7945B /* Frameworks */,
 				F6139169227628E300B7945B /* Resources */,
+				3AF0C13FD04F25294A68527C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F613918B227628E400B7945B /* Build configuration list for PBXNativeTarget "TestChainableAPITests" */;
 			buildPhases = (
+				8EAE2DF10F2E105DE1C722D1 /* [CP] Check Pods Manifest.lock */,
 				F613917B227628E400B7945B /* Sources */,
 				F613917C227628E400B7945B /* Frameworks */,
 				F613917D227628E400B7945B /* Resources */,
+				30F14E5867CAE347AA72D9C0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +227,97 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30F14E5867CAE347AA72D9C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestChainableAPITests/Pods-TestChainableAPITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestChainableAPITests/Pods-TestChainableAPITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AF0C13FD04F25294A68527C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestChainableAPI/Pods-TestChainableAPI-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Siesta/Siesta.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Siesta.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestChainableAPI/Pods-TestChainableAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C9FFB64312E2585EBDB8E99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestChainableAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EAE2DF10F2E105DE1C722D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestChainableAPITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F6139167227628E300B7945B /* Sources */ = {
@@ -358,6 +485,7 @@
 		};
 		F6139189227628E400B7945B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C85C20140EE06D4787DF749 /* Pods-TestChainableAPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -375,6 +503,7 @@
 		};
 		F613918A227628E400B7945B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8BCFF20BF61FB3C35E65565 /* Pods-TestChainableAPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,8 +521,9 @@
 		};
 		F613918C227628E400B7945B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 036DD5544B23BC129234E164 /* Pods-TestChainableAPITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestChainableAPITests/Info.plist;
@@ -412,8 +542,9 @@
 		};
 		F613918D227628E400B7945B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEE441B88DDD31EBB0EC1F74 /* Pods-TestChainableAPITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestChainableAPITests/Info.plist;

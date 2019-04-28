@@ -1,0 +1,34 @@
+PODS:
+  - OHHTTPStubs/Core (8.0.0)
+  - OHHTTPStubs/Default (8.0.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (8.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (8.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (8.0.0)
+  - OHHTTPStubs/Swift (8.0.0):
+    - OHHTTPStubs/Default
+  - Siesta (1.4.3):
+    - Siesta/Core (= 1.4.3)
+  - Siesta/Core (1.4.3)
+
+DEPENDENCIES:
+  - OHHTTPStubs/Swift
+  - Siesta (~> 1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - OHHTTPStubs
+    - Siesta
+
+SPEC CHECKSUMS:
+  OHHTTPStubs: 9cbce6364bec557cc3439aa6bb7514670d780881
+  Siesta: 83795fdf6a43232d1d2909e1a3dfb92ab5916d26
+
+PODFILE CHECKSUM: 517f70a035ca080143228bea80e7305605c86fcf
+
+COCOAPODS: 1.6.1
