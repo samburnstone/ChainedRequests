@@ -16,6 +16,9 @@
 		F6139179227628E400B7945B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6139177227628E400B7945B /* LaunchScreen.storyboard */; };
 		F6139184227628E400B7945B /* TestChainableAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6139183227628E400B7945B /* TestChainableAPITests.swift */; };
 		F6A61E8F2276307500C152A7 /* StatusServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A61E8E2276307500C152A7 /* StatusServiceClient.swift */; };
+		F6A61E912276332400C152A7 /* ChainedUserRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A61E902276332400C152A7 /* ChainedUserRegistration.swift */; };
+		F6A61E9322764FA400C152A7 /* RegistrationServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A61E9222764FA400C152A7 /* RegistrationServiceClient.swift */; };
+		F6A61E9522764FD800C152A7 /* LoginServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A61E9422764FD800C152A7 /* LoginServiceClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		F6139183227628E400B7945B /* TestChainableAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestChainableAPITests.swift; sourceTree = "<group>"; };
 		F6139185227628E400B7945B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6A61E8E2276307500C152A7 /* StatusServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusServiceClient.swift; sourceTree = "<group>"; };
+		F6A61E902276332400C152A7 /* ChainedUserRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainedUserRegistration.swift; sourceTree = "<group>"; };
+		F6A61E9222764FA400C152A7 /* RegistrationServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationServiceClient.swift; sourceTree = "<group>"; };
+		F6A61E9422764FD800C152A7 /* LoginServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceClient.swift; sourceTree = "<group>"; };
 		F8BCFF20BF61FB3C35E65565 /* Pods-TestChainableAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestChainableAPI.release.xcconfig"; path = "Target Support Files/Pods-TestChainableAPI/Pods-TestChainableAPI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +120,9 @@
 				F613916E227628E300B7945B /* AppDelegate.swift */,
 				F6139170227628E300B7945B /* ViewController.swift */,
 				F6A61E8E2276307500C152A7 /* StatusServiceClient.swift */,
+				F6A61E9222764FA400C152A7 /* RegistrationServiceClient.swift */,
+				F6A61E9422764FD800C152A7 /* LoginServiceClient.swift */,
+				F6A61E902276332400C152A7 /* ChainedUserRegistration.swift */,
 				F6139172227628E300B7945B /* Main.storyboard */,
 				F6139175227628E400B7945B /* Assets.xcassets */,
 				F6139177227628E400B7945B /* LaunchScreen.storyboard */,
@@ -327,9 +336,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6A61E9522764FD800C152A7 /* LoginServiceClient.swift in Sources */,
 				F6139171227628E300B7945B /* ViewController.swift in Sources */,
 				F6A61E8F2276307500C152A7 /* StatusServiceClient.swift in Sources */,
+				F6A61E912276332400C152A7 /* ChainedUserRegistration.swift in Sources */,
 				F613916F227628E300B7945B /* AppDelegate.swift in Sources */,
+				F6A61E9322764FA400C152A7 /* RegistrationServiceClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

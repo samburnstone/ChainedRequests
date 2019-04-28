@@ -12,16 +12,14 @@ import XCTest
 
 class TestChainableAPITests: XCTestCase {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+    var chained = ChainedUserRegistration()
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        OHHTTPStubs.removeAllStubs()
     }
 
-    func test_call_to_login_endpoint_is_made_if_status_endpoint_returns_statusCode_0() {
-        let expectation = XCTestExpectation(description: "It calls the API")
+    func test_it_calls_status_endpoint() {
+        let expectation = XCTestExpectation(description: "It calls the status API")
 
         stub(condition: isPath("/status")) { _ in
             let obj: [String: Any] = ["statusCode": 0]
@@ -29,12 +27,46 @@ class TestChainableAPITests: XCTestCase {
             return OHHTTPStubsResponse(jsonObject: obj, statusCode: 200, headers: nil)
         }
 
-        let statusServiceClient = StatusServiceClient(baseURL: "https://www.foo.com")
-        statusServiceClient.fetchUserRegistrationStatus()
+        chained.makeChainedUserAPICall()
+
+        wait(for: [expectation], timeout: 5)
+    }
+
+    func test_call_to_login_endpoint_is_made_if_status_endpoint_returns_statusCode_0() {
+        let expectation = XCTestExpectation(description: "It calls the login API")
+
+        stub(condition: isPath("/status")) { _ in
+            let obj: [String: Any] = ["statusCode": 0]
+            return OHHTTPStubsResponse(jsonObject: obj, statusCode: 200, headers: nil)
+        }
+
+        stub(condition: isPath("/login")) { _ in
+            expectation.fulfill()
+            let response = [String: Any]()
+            return OHHTTPStubsResponse(jsonObject: response, statusCode: 200, headers: nil)
+        }
+
+        chained.makeChainedUserAPICall()
 
         wait(for: [expectation], timeout: 5)
     }
 
     func test_call_to_register_endpoint_is_made_if_status_endpoint_returns_statusCode_1() {
+        let expectation = XCTestExpectation(description: "It calls the login API")
+
+        stub(condition: isPath("/status")) { _ in
+            let obj: [String: Any] = ["statusCode": 1]
+            return OHHTTPStubsResponse(jsonObject: obj, statusCode: 200, headers: nil)
+        }
+
+        stub(condition: isPath("/register")) { _ in
+            expectation.fulfill()
+            let response = [String: Any]()
+            return OHHTTPStubsResponse(jsonObject: response, statusCode: 200, headers: nil)
+        }
+
+        chained.makeChainedUserAPICall()
+
+        wait(for: [expectation], timeout: 5)
     }
 }

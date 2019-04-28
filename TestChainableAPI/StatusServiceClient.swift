@@ -10,12 +10,23 @@ import Siesta
 
 class StatusServiceClient: Service {
 
+    typealias Response = [String: Any]
+
+    var onSuccess: ((Response) -> Void)?
+
     let endpoint: String = "status"
 
-    func fetchUserRegistrationStatus() {
+    required init() {
+        super.init(baseURL: "https://www.foo.com")
+    }
+
+    @discardableResult
+    func fetchUserRegistrationStatus() -> Self {
         resource(endpoint).loadIfNeeded()?
-            .onSuccess { entity in
-            print(entity)
+            .onSuccess { [unowned self] response in
+                let response: Response = response.typedContent() ?? [:]
+            self.onSuccess?(response)
         }
+        return self
     }
 }
